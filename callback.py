@@ -62,6 +62,7 @@ def close_recent_apps(d, excluded_apps=None):
         print("Clear Memory button clicked.")
     else:
         print("Clear Memory button not found.")
+    d.press('home')
 
 # Function to process the ADB task and send a webhook on completion
 def process_adb_task(task_data):
